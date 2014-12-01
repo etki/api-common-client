@@ -1,0 +1,21 @@
+{
+    "name": "etki/api-client-common",
+    "description": "A base package for other API clients",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Etki",
+            "email": "etki@etki.name"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "guzzle/guzzle": "~3.9"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.1.x-dev",
+        "squizlabs/php_codesniffer": "~1.0",
+        "phpmd/phpmd": "~2.0",
+        "block8/php-docblock-checker": "~1.0"
+    }
+}
