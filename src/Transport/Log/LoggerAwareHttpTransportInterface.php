@@ -20,7 +20,7 @@ interface LoggerAwareHttpTransportInterface
      * @return $this Current instance.
      * @since 0.1.0
      */
-    public function attachLogger(HttpLoggerInterface $logger);
+    public function attachHttpLogger(HttpLoggerInterface $logger);
 
     /**
      * Detaches logger.
@@ -30,7 +30,7 @@ interface LoggerAwareHttpTransportInterface
      * @return $this Current instance.
      * @since 0.1.0
      */
-    public function detachLogger(HttpLoggerInterface $logger);
+    public function detachHttpLogger(HttpLoggerInterface $logger);
 
     /**
      * Removes last logger from stack.
@@ -38,5 +38,5 @@ interface LoggerAwareHttpTransportInterface
      * @return HttpLoggerInterface Popped-out logger.
      * @since 0.1.0
      */
-    public function popLogger();
+    public function popHttpLogger();
 }

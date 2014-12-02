@@ -15,10 +15,20 @@ interface HttpTransportInterface
     /**
      * Sends request.
      *
-     * @param HttpRequestInterface $request
+     * @param HttpRequestInterface $httpRequest
      *
      * @return HttpResponseInterface Response.
      * @since 0.1.0
      */
-    public function sendRequest(HttpRequestInterface $request);
+    public function sendRequest(HttpRequestInterface $httpRequest);
+    /**
+     * Sets timeout.
+     *
+     * @param int|float $seconds Amount of seconds. Should be set to 0.1 if real
+     *                           value will be lower.
+     *
+     * @return $this Current instance.
+     * @since 0.1.0
+     */
+    public function setTimeout($seconds);
 }

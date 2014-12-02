@@ -23,10 +23,10 @@ interface HttpResponseInterface
     /**
      * Returns all headers.
      *
-     * @return array Headers in [header => [values]] form.
+     * @return array Headers in [header => value] form.
      * @since 0.1.0
      */
-    public function getHeaders();
+    public function getHttpHeaders();
 
     /**
      * Returns HTTP status code.
@@ -43,4 +43,44 @@ interface HttpResponseInterface
      * @since 0.1.0
      */
     public function getHttpStatusMessage();
+
+    /**
+     * Sets response body.
+     *
+     * @param string $body Body to set.
+     *
+     * @return $this Current instance.
+     * @since 0.1.0
+     */
+    public function setBody($body);
+
+    /**
+     * Sets HTTP headers in [header => value] format.
+     *
+     * @param string[][] $headers HTTP headers.
+     *
+     * @return $this Current instance.
+     * @since 0.1.0
+     */
+    public function setHttpHeaders(array $headers);
+
+    /**
+     * Sets HTTP status code.
+     *
+     * @param int $statusCode HTTP status code.
+     *
+     * @return $this Current instance.
+     * @since 0.1.0
+     */
+    public function setHttpStatusCode($statusCode);
+
+    /**
+     * Sets HTTP status message.
+     *
+     * @param string $message Sets HTTP status message.
+     *
+     * @return $this Current instance.
+     * @since 0.1.0
+     */
+    public function setHttpStatusMessage($message);
 }
