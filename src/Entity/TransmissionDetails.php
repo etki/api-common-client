@@ -3,15 +3,13 @@
 namespace Etki\Api\Common\Client\Entity;
 
 /**
- *
+ * This entity holds all transmission data for particular API.
  *
  * @version 0.1.0
- * @since   
+ * @since   0.1.0
  * @package Etki\Api\Common\Client\Entity
  * @author  Etki <etki@etki.name>
  */
-class TransmissionDetails
+class TransmissionDetails extends DataContainer
 {
-
 }
- 
