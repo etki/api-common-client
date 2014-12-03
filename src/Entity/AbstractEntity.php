@@ -105,11 +105,10 @@ abstract class AbstractEntity
     public function assertAllPropertiesSetExcept(array $propertyNames)
     {
         $allProperties = array_keys(get_object_vars($this));
+        $inspectedProperties = $allProperties;
         if ($propertyNames) {
             $propertyNames = array_intersect($propertyNames, $allProperties);
             $inspectedProperties = array_diff($allProperties, $propertyNames);
-        } else {
-            $inspectedProperties = $allProperties;
         }
         $this->assertPropertiesSet($inspectedProperties);
     }
