@@ -2,7 +2,7 @@
 
 namespace Etki\Api\Common\Client\Exception\Transport;
 
-use RuntimeException;
+use Etki\Api\Common\Client\Exception\RuntimeException;
 
 /**
  * Thrown whenever transport fails to make a request.
