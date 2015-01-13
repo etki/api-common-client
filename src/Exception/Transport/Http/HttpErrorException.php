@@ -54,4 +54,26 @@ class HttpErrorException extends RequestFailedException
         $this->statusMessage = $statusMessage;
         parent::__construct($message, $code, $previous);
     }
+
+    /**
+     * Returns statusCode.
+     *
+     * @return int
+     * @since 0.1.0
+     */
+    public function getStatusCode()
+    {
+        return $this->statusCode;
+    }
+
+    /**
+     * Returns statusMessage.
+     *
+     * @return string
+     * @since 0.1.0
+     */
+    public function getStatusMessage()
+    {
+        return $this->statusMessage;
+    }
 }
